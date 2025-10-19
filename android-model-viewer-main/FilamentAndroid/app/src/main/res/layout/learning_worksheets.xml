@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/view_models_bg"
+    tools:context=".MainActivity">
+
+    <!-- Fixed Back Button (Not inside ScrollView) -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/arrow_back_light"
+        android:src="@drawable/colored_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="72dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Single Direct Child -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LEARNING WORKSHEETS"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:textColor="@android:color/white"
+                android:shadowColor="#8B0000"
+                android:shadowRadius="6"
+                android:shadowDx="2"
+                android:shadowDy="2"/>
+
+
+            <ImageView
+                android:id="@+id/vrImage"
+                android:layout_width="351dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="VR Image"
+                android:src="@drawable/worksheets_img_banner" />
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get ready to learn by doing! This hands-on activity lets you apply your skills, explore concepts, and experience learning in an engaging way"
+                android:textSize="16sp"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:paddingBottom="16dp"
+                android:textColor="@color/white" />
+
+            <!-- Ensure buttonContainer is inside the parent LinearLayout -->
+            <LinearLayout
+                android:id="@+id/buttonContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- Models as CardView Items -->
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/DaltonsModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_white"
+                        android:padding="14dp">
+
+                        <!-- Title centered horizontally -->
+                        <TextView
+                            android:id="@+id/Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/anton_regular"
+                            android:text="Crack the Chemical Code"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_brown"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+
+                        <Button
+                            android:id="@+id/btn_download"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Title"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_download_btn"
+                            android:drawableLeft="@drawable/btn_download"
+                            android:drawablePadding="6dp"
+                            android:minWidth="120dp"
+                            android:paddingStart="12dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginEnd="80dp"
+                            android:text="Download"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PLumPuddingModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_white"
+                        android:padding="14dp">
+
+                        <!-- Title centered horizontally -->
+                        <TextView
+                            android:id="@+id/Title1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/anton_regular"
+                            android:text="Atomic Structure Bohr Model"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_brown"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+
+                        <Button
+                            android:id="@+id/btn_download2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Title1"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_download_btn"
+                            android:drawableLeft="@drawable/btn_download"
+                            android:drawablePadding="6dp"
+                            android:minWidth="120dp"
+                            android:paddingStart="12dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginEnd="80dp"
+                            android:text="Download"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Updated Card 3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/GoldFoilExperimentModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_white"
+                        android:padding="14dp">
+
+                        <TextView
+                            android:id="@+id/Title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/anton_regular"
+                            android:text="Building Atomic Models"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_brown"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_download3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Title2"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_download_btn"
+                            android:drawableLeft="@drawable/btn_download"
+                            android:drawablePadding="6dp"
+                            android:minWidth="120dp"
+                            android:paddingStart="12dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginEnd="80dp"
+                            android:text="Download"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 4 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PlanetaryModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_white"
+                        android:padding="14dp">
+
+                        <TextView
+                            android:id="@+id/Title3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/anton_regular"
+                            android:text="Mass Number Practice Test"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_brown"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_download4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Title3"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_download_btn"
+                            android:drawableLeft="@drawable/btn_download"
+                            android:drawablePadding="6dp"
+                            android:minWidth="120dp"
+                            android:paddingStart="12dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginEnd="80dp"
+                            android:text="Download"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 5 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/GoldFoilExperimentModel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_white"
+                        android:padding="14dp">
+
+                        <TextView
+                            android:id="@+id/Title4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/anton_regular"
+                            android:text="Evolution of Atomic Model"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_brown"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_download5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Title4"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_download_btn"
+                            android:drawableLeft="@drawable/btn_download"
+                            android:drawablePadding="6dp"
+                            android:minWidth="120dp"
+                            android:paddingStart="12dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginEnd="80dp"
+                            android:text="Download"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 6 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PlanetaryModel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_white"
+                        android:padding="14dp">
+
+                        <TextView
+                            android:id="@+id/Title5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/anton_regular"
+                            android:text="Rutherford Experiment Model"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_brown"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_download6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Title5"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_download_btn"
+                            android:drawableLeft="@drawable/btn_download"
+                            android:drawablePadding="6dp"
+                            android:minWidth="120dp"
+                            android:paddingStart="12dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginEnd="80dp"
+                            android:text="Download"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- END CARDS -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

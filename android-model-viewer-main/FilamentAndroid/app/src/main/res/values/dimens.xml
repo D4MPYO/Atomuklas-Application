@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="welcome_text_size">58sp</dimen> <!-- Adjustable font size -->
+    <dimen name="page_margin">16dp</dimen>
+    <dimen name="page_offset">32dp</dimen>
+
+    <dimen name="original_video_height">250dp</dimen>
+
+</resources>

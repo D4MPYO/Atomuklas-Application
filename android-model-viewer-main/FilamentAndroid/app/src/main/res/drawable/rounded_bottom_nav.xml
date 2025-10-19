@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Round only the top corners -->
+    <corners android:topLeftRadius="20dp" android:topRightRadius="20dp"/>
+
+    <!-- Set background color -->
+    <solid android:color="@color/NavColor"/>
+
+    <!-- Optional: Add padding to prevent content from touching the edges -->
+    <padding android:left="8dp" android:right="8dp"/>
+
+</shape>

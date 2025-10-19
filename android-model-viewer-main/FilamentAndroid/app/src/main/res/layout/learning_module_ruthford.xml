@@ -1,0 +1,258 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_settings">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="32dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/arrow_back_light"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Scroll View -->
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Intro Image -->
+            <ImageView
+                android:id="@+id/intro_img"
+                android:layout_width="190dp"
+                android:layout_height="171dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/for_module_5" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/aboutUsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intro_img"
+                android:layout_marginTop="16dp"
+                android:paddingStart="24dp"
+                android:text="CONTENT"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Description -->
+
+            <!-- Card-like Section -->
+
+            <TextView
+                android:id="@+id/aboutUsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutUsTitle"
+                android:layout_marginTop="6dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="24dp"
+                android:text="Ruththerford Atomic Model \nRutherford Gold Foil Experiment"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/contentCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutUsDescription"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/rounded_white_bg"
+                android:elevation="4dp">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/headingElements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:text="RUTHERFORD ATOMIC MODEL"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/democritus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:src="@drawable/ruthford_portrait" />
+
+                <TextView
+                    android:id="@+id/contentBranchesChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="Ernest Rutherford was born on August 30, 1871, in Nelson, New Zealand, the fourth child and second son in a family of seven sons and five daughters. His father James Rutherford, a Scottish wheelwright, immigrated to New Zealand with Ernest’s grandfather and the whole family in 1842.  In 1895 he obtained a bachelor’s degree in chemistry and geology from Canterbury College and spent a short time working as a schoolteacher. He won an overseas study scholarship and decided to go to the University of Cambridge in the United Kingdom to work in J. J. Thomson’s laboratory."
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingInorganicChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="NUCLEAR MODEL"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/InorganicChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="@string/NUCLEARMODEL"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingAnalyticalChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="GOLD FOIL EXPERIMENTS"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/PhysicalChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="@string/FoilExp"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/AnalyticalChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:src="@drawable/golden_model"/>
+
+                <TextView
+                    android:id="@+id/Biochemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="@string/Exp2nd"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingWhyChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textAlignment="center"
+                    android:text="POSTULATES OF RUTHERFORD ATOMIC MODEL"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentWhyChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="@string/POSTULATES2"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingLastPart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="LIMITATION"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentLastPart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="start"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/LIMITATIONRuth"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

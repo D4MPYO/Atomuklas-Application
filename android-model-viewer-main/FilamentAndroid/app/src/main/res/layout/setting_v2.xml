@@ -1,0 +1,813 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_settings">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="32dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/arrow_back_light"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Scroll View -->
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backButton">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Intro Image -->
+            <ImageView
+                android:id="@+id/intro_img"
+                android:layout_width="190dp"
+                android:layout_height="171dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/new_welcome_logo" />
+
+            <!-- Accordion Header for Data & Privacy -->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/accordionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_below="@id/intro_img"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tvDataPrivacy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Data &amp; Privacy"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivIndicator"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_arrow_down" />
+            </LinearLayout>
+
+            <!-- Expandable Content for Data & Privacy -->
+            <LinearLayout
+                android:id="@+id/expandableContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/accordionHeader"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <!-- Items for Data & Privacy -->
+                <LinearLayout
+                    android:id="@+id/cardClearHistory"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_history" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Clear Learning History"
+                        android:textColor="@color/dark_brown"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cardDeleteAccount"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_delete" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Delete Account Option"
+                        android:textColor="@color/dark_brown"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cardDataPolicy"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_data_privacy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Data Privacy Policy"
+                        android:textColor="@color/dark_brown"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Accordion Header for Support & Feedback -->
+            <LinearLayout
+                android:id="@+id/accordionHeaderSupportFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_below="@id/expandableContent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tvSupportFeedback"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Support &amp; Feedback"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivIndicatorSupportFeedback"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_arrow_down" />
+            </LinearLayout>
+
+            <!-- Expandable Content for Support & Feedback (Initially Hidden) -->
+            <LinearLayout
+                android:id="@+id/expandableContentSupportFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/accordionHeaderSupportFeedback"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <!-- Items for Support & Feedback -->
+                <LinearLayout
+                    android:id="@+id/cardContactSupport"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_contact_support" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Contact Support"
+                        android:textColor="@color/dark_brown"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cardReportIssue"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_report_issue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Report an Issue"
+                        android:textColor="@color/dark_brown"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cardSuggestFeature"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_suggest" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Suggest a Feature"
+                        android:textColor="@color/dark_brown"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- About Us Title -->
+            <TextView
+                android:id="@+id/aboutUsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expandableContentSupportFeedback"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:text="ABOUT US"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- About Us Description -->
+            <TextView
+                android:id="@+id/aboutUsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutUsTitle"
+                android:layout_marginTop="8dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/about_atomuklas"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="141dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/aboutUsDescription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/btn_next"
+                android:text="BACK TO HOME"
+                android:textColor="@color/yellow"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/popupClearHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/BoxPop"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/popupTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Clear History"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/popupTextClearHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:justificationMode="inter_word"
+                    android:text="Reset your progress with a single tap!\nThis option allows you to remove past answers and learning data, giving you a fresh start whenever needed."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- Confirm Button -->
+                    <Button
+                        android:id="@+id/confirmPopupClearHistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="@color/primary"
+                        android:padding="10dp"
+                        android:text="Confirm"
+                        android:textColor="@color/white" />
+
+                    <!-- Close Button -->
+                    <Button
+                        android:id="@+id/closePopupClearHistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/PopUpBox"
+                        android:padding="10dp"
+                        android:text="Close"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <!-- Pop-up for Delete Account -->
+    <RelativeLayout
+        android:id="@+id/popupDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/BoxPop"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/popupTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Delete Account Option"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/popupTextDeleteAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:justificationMode="inter_word"
+                    android:text="Although Atomuklas doesn’t require sign-in, this feature ensures that all locally stored data can be permanently erased if you choose to remove your learning history from the app."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- Confirm Button -->
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/confirmPopupDeleteAccount"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginEnd="8dp"-->
+                    <!--                        android:backgroundTint="@color/primary"-->
+                    <!--                        android:padding="10dp"-->
+                    <!--                        android:text="Confirm"-->
+                    <!--                        android:textColor="@color/white" />-->
+
+                    <!-- Close Button -->
+                    <Button
+                        android:id="@+id/closePopupDeleteAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/PopUpBox"
+                        android:padding="10dp"
+                        android:text="Okay"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <!-- Pop-up for DataPrivacyPolicy -->
+    <RelativeLayout
+        android:id="@+id/popupDataPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/BoxPop"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/popupTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Data Privacy Policy"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Scrollable Content (Includes Policy Text + Buttons) -->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Privacy Policy Text -->
+                        <TextView
+                            android:id="@+id/popupTextDataPolicy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:justificationMode="inter_word"
+                            android:paddingBottom="20dp"
+                            android:text="@string/privacy_policy"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <!-- Buttons Inside Scroll -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <!-- Confirm Button -->
+                            <!--                            <Button-->
+                            <!--                                android:id="@+id/confirmPopupDataPolicy"-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:layout_marginEnd="8dp"-->
+                            <!--                                android:backgroundTint="@color/primary"-->
+                            <!--                                android:padding="10dp"-->
+                            <!--                                android:text="Confirm"-->
+                            <!--                                android:textColor="@color/white" />-->
+
+                            <!-- Close Button -->
+                            <Button
+                                android:id="@+id/closePopupDataPolicy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/PopUpBox"
+                                android:padding="10dp"
+                                android:text="Close"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <!-- Pop-up for ContactSupport -->
+    <RelativeLayout
+        android:id="@+id/popupContactSupport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/BoxPop"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/popupTitleContactSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Contact Support"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/popupTextContactSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:justificationMode="inter_word"
+                    android:text="Need help? Reach out to our support team for assistance with any questions or concerns about Atomuklas. We’re here to help you have the best learning experience!"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- Confirm Button -->
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/confirmPopupDeleteAccount"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginEnd="8dp"-->
+                    <!--                        android:backgroundTint="@color/primary"-->
+                    <!--                        android:padding="10dp"-->
+                    <!--                        android:text="Confirm"-->
+                    <!--                        android:textColor="@color/white" />-->
+
+                    <!-- Close Button -->
+                    <Button
+                        android:id="@+id/closePopupContactSupport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/PopUpBox"
+                        android:padding="10dp"
+                        android:text="Okay"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <!-- Pop-up for ReportIssue -->
+    <RelativeLayout
+        android:id="@+id/popupReportIssue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/BoxPop"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/popupTitleReportIssue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Report an Issue"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/popupTextReportIssue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:justificationMode="inter_word"
+                    android:text="Encountered a problem? Let us know! Report bugs, errors, or any technical issues so we can improve the app and provide a smoother experience."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- Confirm Button -->
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/confirmPopupDeleteAccount"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginEnd="8dp"-->
+                    <!--                        android:backgroundTint="@color/primary"-->
+                    <!--                        android:padding="10dp"-->
+                    <!--                        android:text="Confirm"-->
+                    <!--                        android:textColor="@color/white" />-->
+
+                    <!-- Close Button -->
+                    <Button
+                        android:id="@+id/closePopupReportIssue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/PopUpBox"
+                        android:padding="10dp"
+                        android:text="Okay"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <!-- Pop-up for SuggestFeature -->
+    <RelativeLayout
+        android:id="@+id/popupSuggestFeature"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/BoxPop"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/popupTitleSuggestFeature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Suggest a Feature"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/popupTextSuggestFeature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:justificationMode="inter_word"
+                    android:text="Have an idea to make Atomuklas better? Share your suggestions with us! We value your feedback and continuously work to enhance the app based on user needs."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- Confirm Button -->
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/confirmPopupDeleteAccount"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginEnd="8dp"-->
+                    <!--                        android:backgroundTint="@color/primary"-->
+                    <!--                        android:padding="10dp"-->
+                    <!--                        android:text="Confirm"-->
+                    <!--                        android:textColor="@color/white" />-->
+
+                    <!-- Close Button -->
+                    <Button
+                        android:id="@+id/closePopupSuggestFeature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/PopUpBox"
+                        android:padding="10dp"
+                        android:text="Okay"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

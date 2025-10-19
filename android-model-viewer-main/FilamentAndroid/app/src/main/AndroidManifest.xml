@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoooo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Model1"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Model2"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Model3"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Model4"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Model5"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- Other Activities -->
+        <activity android:name=".MainActivity" android:exported="true" />
+        <activity android:name=".IntroActivity" android:exported="true" />
+        <activity android:name=".Choosing_Avatar" />
+        <activity android:name=".SamplePopUp" />
+        <activity android:name=".PracticeExam" />
+        <activity android:name=".TakeExam" />
+        <activity android:name=".ExamResult" />
+        <activity android:name=".Concept" />
+        <activity android:name=".Quizzes" />
+        <activity android:name=".Trivia" />
+        <activity android:name=".Simulation" />
+        <activity android:name=".Astro_Challenge" />
+        <activity android:name=".Glossary" />
+        <activity android:name=".QuizEasy" />
+        <activity android:name=".QuizIntermidiate" />
+        <activity android:name=".QuizAdvance" />
+        <activity android:name=".QuizBonus" />
+        <activity android:name=".StartEasyQuiz" />
+        <activity android:name=".StartIntermediateQuiz" />
+        <activity android:name=".StartAdvanceQuiz" />
+        <activity android:name=".StartBonusQuiz"/>
+        <activity android:name=".ConceptComets" />
+        <activity android:name=".ConceptAsteroids" />
+        <activity android:name=".ConceptMeteors" />
+        <activity android:name=".ConceptIntroAstronomy" />
+        <activity android:name=".ViewModels"/>
+        <activity android:name=".Library"/>
+        <activity android:name=".Profile"/>
+
+        <activity android:name=".Result"/>
+        <activity android:name=".ResultEasy"/>
+        <activity android:name=".ResultIntermediate"/>
+        <activity android:name=".ResultAdvance"/>
+        <activity android:name=".ResultBonus"/>
+
+
+        <activity android:name=".PrivacyActivity"/>
+        <activity android:name=".Accomplishment"/>
+        <activity android:name=".LearningModules"/>
+        <activity android:name=".LearningModule_Intro"/>
+        <activity android:name=".LearningModule_Basics"/>
+        <activity android:name=".LearningModule_Daltons"/>
+        <activity android:name=".LearningModule_Thompson"/>
+        <activity android:name=".LearningModule_Ruthford"/>
+        <activity android:name=".LearningModule_Bohr"/>
+        <activity android:name=".Worksheets"/>
+        <activity android:name=".Worksheets2"/>
+        <activity android:name=".Worksheet_Module_1" />
+        <activity android:name=".Worksheet_Module_2"/>
+        <activity android:name=".Worksheet_Module_3"/>
+        <activity android:name=".Worksheet_Module_4"/>
+
+        <activity android:name=".ReviewAnswersActivity"/>
+        <activity android:name=".ReviewAnswersActivityEasy"/>
+<!--        <activity android:name=".ReviewAnswersActivityIntermediate"/>-->
+
+        <activity android:name=".Scores"/>
+
+        <activity
+            android:name=".ContentVideo"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name=".ContentVideoIntroduction"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name=".ContentVideoBasics"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name=".ContentVideoDaltonsModel"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name=".ContentVideoThomsonsModel"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name=".ContentVideoRutherfordModel"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name=".ContentVideoBohrsModel"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+
+
+
+
+        <activity android:name=".Trivia_New"/>
+        <activity android:name=".Game_Game"/>
+        <activity android:name=".DetailActivity" />
+
+        <activity android:name="AutomaniaGames"/>
+        <activity android:name="Atomu_Guess_Game"/>
+        <activity android:name=".Atomu_Guess_Quiz"/>
+        <activity android:name="AtomuGuessResult"/>
+
+
+        <activity
+            android:name=".AtomuEscapeIntro"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".Atomu_EscapeRoom"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".AtomuEscapeResult"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity android:name=".SplashScreenAtomuGuess"/>
+
+        <activity
+            android:name=".SplashScreenEscapeRoom"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".SplashScreenMysteryDoor"
+            android:screenOrientation="landscape">
+        </activity>
+
+
+        <activity
+            android:name=".Atomu_MysteryDoorGameIntro"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".Atomu_MysteryDoorGameStart"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
+            android:name=".AtomuMysteryDoorResult"
+            android:screenOrientation="landscape">
+        </activity>
+
+    </application>
+
+</manifest>

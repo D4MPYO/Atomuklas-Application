@@ -1,0 +1,322 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_settings">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="32dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/arrow_back_light"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Scroll View -->
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Intro Image -->
+            <ImageView
+                android:id="@+id/intro_img"
+                android:layout_width="190dp"
+                android:layout_height="171dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/module_theories" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/aboutUsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intro_img"
+                android:layout_marginTop="16dp"
+                android:paddingStart="24dp"
+                android:text="CONTENT"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/aboutUsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutUsTitle"
+                android:layout_marginTop="8dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="24dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"
+                android:text="Bohr's Model of Atom \nPlanetary Model \nBohr's Atomic Model"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp" />
+
+            <!-- Card-like Section -->
+            <LinearLayout
+                android:id="@+id/contentCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutUsDescription"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/rounded_white_bg"
+                android:elevation="4dp">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/headingElements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:text="BOHR’S MODEL OF ATOM"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/democritus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:src="@drawable/bohr_portrait" />
+
+                <TextView
+                    android:id="@+id/contentBranchesChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="Niels Bohr, a Danish scientist who worked with Rutherford, developed Bohr's Theory of the Atom. His model reinforced the idea of electrons orbiting the nucleus in seven quantum levels or shells. Bohr based his theory on the measurement of the line spectrum emitted by hydrogen gas, using mathematical formulas to determine different energy levels by measuring their wavelengths. He proposed that electrons occupy the lowest possible energy level and only move up if the lower levels are full."
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingInorganicChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="PLANETARY MODEL"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/AnalyticalChemistr11y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:src="@drawable/bohr_model_1"/>
+
+                <TextView
+                    android:id="@+id/InorganicChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="@string/PlanetaryModel"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/AnalyticalChemistr112y"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/bohr_model_2"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="16dp" />
+
+                    <TextView
+                        android:id="@+id/InorganicChemistry124"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/BohrModel2"
+                        android:textColor="@color/dark_brown"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:justificationMode="inter_word" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/AnalyticalChemistr1112y"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/bohr_model_3"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="16dp" />
+
+                    <TextView
+                        android:id="@+id/InorganicChemistry1244"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/BohrModel3"
+                        android:textColor="@color/dark_brown"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"
+                        android:justificationMode="inter_word" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/headingAnalyticalChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:text="POSTULATES OF BOHR’S ATOMIC MODEL"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/PhysicalChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="@string/POSTULATESBohr"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingWhyChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textAlignment="center"
+                    android:text="HYDROGEN ATOM"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentWhyChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="@string/HYDROGENATOM"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingWhyChemistry124"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textAlignment="center"
+                    android:text="SIGNIFICANCE"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentWhyChemistry65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="@string/SIGNIFICANCEBhor"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingLastPart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="LIMITATION"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentLastPart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="start"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/LIMITATIONBohr"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

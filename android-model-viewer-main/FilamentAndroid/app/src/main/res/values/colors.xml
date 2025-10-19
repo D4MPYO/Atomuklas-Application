@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+
+    <!-- colors for button style -->
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+    <!-- colors for tab and screent text -->
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+    <color name="TitleColor">#FFFFCC</color>
+    <color name="TitleColor2">#D7BFFF</color>
+    <color name="TitleColor3">#A1FFFF</color>
+
+    <color name="TextIntros">#ffde59</color>
+    <color name="buttonColor">#ed5f1e</color>
+
+
+    <color name="Shape">#38419D</color>
+
+    <color name="blue">#0D92F4</color>
+    <color name="transp">#00000000</color>
+
+    <color name="concept">#0b4694</color>
+    <color name="quiz">#b81f1f</color>
+    <color name="trivia">#e484bf</color>
+    <color name="challenge">#6328be</color>
+    <color name="glossary">#cc9912</color>
+
+    <color name="decs">#284263</color>
+
+    <color name="arrow_back_light">#ffffff</color>
+    <color name="arrow_back_dark">#9f2b00</color>
+
+    <color name="black">#000000</color>
+
+    <color name="backgroundColor">#1E3E62</color> <!-- Light background -->
+    <color name="cardviewColor">#ffffff</color>
+<!--    <color name="cardviewColor">#12253b</color>-->
+    <color name="boarder">#FF000000</color>
+    <color name="colorDefault">#ffffff</color> <!-- Change this to your preferred color -->
+    <color name="colorSelected">#FF5722</color> <!-- Color for selected state -->
+
+    <color name="Gray">#607D8B</color>
+
+    <color name="Timer">#0D92F4</color>
+
+    <color name="red">#D32F2F</color>
+    <color name="gray">#757575</color>
+
+    <color name="navTextColor">#9e825a</color>
+
+
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Custom color for Dialog Buttons -->
+    <color name="dialogButtonColor">#FF0000</color> <!-- Change this to your preferred color -->
+
+
+
+    <!-- Radiant Background Colors for Galaxy Theme -->
+    <color name="astronomy_bg">#2B1055</color> <!-- Deep Space Purple -->
+    <color name="historical_bg">#511845</color> <!-- Cosmic Burgundy -->
+    <color name="comet_bg">#0F3460</color> <!-- Electric Blue -->
+    <color name="asteroid_bg">#5E2BFF</color> <!-- Radiant Violet -->
+    <color name="meteor_bg">#6A0572</color> <!-- Galactic Magenta -->
+    <color name="importance_bg">#1B1B2F</color> <!-- Dark Nebula -->
+
+    <color name="EasyMode">#66e5fb</color>
+    <color name="QuizTitle1">#095d40</color>
+
+    <color name="QuizTitle2">#fbda2e</color>
+    <color name="IntermediateMode">#434185</color>
+
+    <color name="QuizTitle3">#b81f1f</color>
+    <color name="AdvanceMode">#cea3a6</color>
+
+    <color name="BonusMode">#0b4694</color>
+
+    <color name="EasyBannerQuiz">#095d40</color>
+    <color name="IntermediateBannerQuiz">#feb11e</color>
+    <color name="AdvanceBannerQuiz">#b81f1f</color>
+
+    <color name="Skip">#01386A</color>
+    <color name="yellow">#feb11e</color>
+    <color name="dark_brown">#9f2b00</color>
+    <color name="orange">#ff910a</color>
+    <color name="NavColor">#f9eacd</color>
+
+    <color name="primary">#6200EE</color>
+    <color name="primary_variant">#3700B3</color>
+
+    <!-- Secondary Colors -->
+    <color name="gray_light">#D3D3D3</color>
+    <color name="gray_dark">#555555</color>
+    <color name="PopUpBox">#ffe177</color>
+    <color name="BoxPop">#ff9d00</color>
+    <color name="transparent">#00000000</color>
+    <color name="examcard">#fcd00d</color>
+
+    <color name="ExamBGColor">#f8e9cd</color>
+    <color name="Grayy">#f2f2f2</color>
+
+    <color name="light_beige">#f8e9cd</color>
+
+    <color name="Violet">#8f52c0</color>
+
+    <color name="Automu_Guess_Bg">#fde17b</color>
+
+
+
+</resources>

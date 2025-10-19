@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    tools:context=".MainActivity">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="200dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_meteors"
+                    android:padding="1dp">
+
+                    <!-- New TextView Below ASTRO -->
+
+                    <ImageView
+                        android:id="@+id/Header_Img"
+                        android:layout_width="129dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="35dp"
+                        android:contentDescription="Concept Image"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/simulationg_img" />
+
+                    <TextView
+                        android:id="@+id/Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@id/Header_Img"
+                        android:fontFamily="@font/anton_regular"
+                        android:text="SIMULATION"
+                        android:textColor="@color/white"
+                        android:textSize="27sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- First Two Cards Side by Side -->
+
+            <!-- Second Set of Two Cards Side by Side (at the bottom) -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Fixed Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="32dp"
+        android:layout_height="36dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/back_arrow"
+        android:layout_gravity="top|start" />
+</FrameLayout>
+
+

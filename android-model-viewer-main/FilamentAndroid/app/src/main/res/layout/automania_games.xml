@@ -1,0 +1,78 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/automania_bg_img">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="32dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/arrow_back_light"
+        android:src="@drawable/colored_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Title Image (ATOMANIA) -->
+
+    <!-- First Image Button (ATOMU-GUESS) -->
+
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="345dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Atommania Title"
+        android:src="@drawable/title_title_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backButton" />
+
+    <ImageButton
+        android:id="@+id/btnAtomuGuess"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/atomu_guess_img_btn"
+        android:scaleType="fitCenter"
+        android:src="@drawable/atomu_guess_img_btn"
+        android:contentDescription="Atomu Guess"
+        app:layout_constraintTop_toBottomOf="@id/titleImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnEscapeRoom"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <!-- Second Image Button (ATOMUKULAS ESCAPE ROOM) -->
+    <ImageButton
+        android:id="@+id/btnEscapeRoom"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/escape_room_img_btn"
+        android:scaleType="fitCenter"
+        android:src="@drawable/escape_room_img_btn"
+        android:contentDescription="Escape Room"
+        app:layout_constraintTop_toBottomOf="@id/titleImage"
+        app:layout_constraintStart_toEndOf="@id/btnAtomuGuess"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Third Image Button (TWELAS YOUR MYSTERY DOOR) -->
+    <ImageButton
+        android:id="@+id/btnMysteryDoor"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/mystery_door_img_btn"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mystery_door_img_btn"
+        android:contentDescription="Mystery Door"
+        app:layout_constraintTop_toBottomOf="@id/btnAtomuGuess"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

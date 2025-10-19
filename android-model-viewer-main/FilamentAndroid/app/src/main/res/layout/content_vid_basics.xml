@@ -1,0 +1,558 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_seting">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Back Button (Optional) -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="32dp"
+            android:layout_height="36dp"
+            android:src="@drawable/back_arrow"
+            android:contentDescription="Back"
+            android:layout_gravity="start" />
+
+        <!-- Video Title -->
+        <TextView
+            android:id="@+id/videoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Basic Chemistry Concepts"
+            android:textSize="25sp"
+            android:fontFamily="@font/anton_regular"
+            android:textColor="@color/dark_brown"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- YouTube Player -->
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- Intro Image -->
+        <ImageView
+            android:id="@+id/intro_img"
+            android:layout_width="190dp"
+            android:layout_height="181dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/for_module_2" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/aboutUsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intro_img"
+            android:layout_marginTop="16dp"
+            android:paddingStart="24dp"
+            android:text="CONTENT"
+            android:textColor="@color/dark_brown"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/aboutUsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutUsTitle"
+            android:layout_marginTop="8dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="24dp"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:text="Atoms and Elements"
+            android:textColor="@color/dark_brown"
+            android:textSize="16sp" />
+
+        <!-- Card-like Section -->
+        <LinearLayout
+            android:id="@+id/contentCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutUsDescription"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded_white_bg"
+            android:elevation="4dp">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/headingElements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Elements"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="@string/ContextElements"
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingBranchesChemistry2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Atoms"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentBranchesChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="An atom is the fundamental building block of matter and the smallest unit that retains the properties of a chemical element. It consists of a central nucleus, made up of positively charged protons and neutral neutrons, surrounded by a cloud of negatively charged electrons."
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingInorganicChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Compounds"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/InorganicChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="Compounds are substances composed of two or more different elements. Some compounds, known as diatomic molecules, consist of two atoms of the same element bonded together."
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingAnalyticalChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Atomic Structure"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/AnalyticalChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:src="@drawable/atom_structure"
+                android:contentDescription="Analytical Chemistry Image" />
+
+
+            <TextView
+                android:id="@+id/headingPhysicalChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Electrons"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PhysicalChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="@string/Electrons"
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingBiochemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Protons "
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Biochemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="Protons have a positive charge and are located in the nucleus, determining the atom's identity and atomic number. Proton is a subatomic particle having a positive electrical charge. Every element's atomic nucleus contains them. It has a mass of 1.67262192 × 10-27 kilograms."
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingWhyChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Neutrons"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentWhyChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="Neutrons have no charge and are also located in the nucleus, contributing to the mass of the atom without affecting its charge. Neutrons are subatomic particles that are located inside each atom's nucleus. Neutrons are somewhat heavier than positively charged protons and have a neutral electric charge, which is neither positive nor negative. It has a mass of 1.67×10−27 kg."
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingLastPart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Nucleus"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentLastPart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="The nucleus of an atom was discovered by Rutherfold in 1911. Rutherford's experiment involves bombarding thin gold foil with α particles and observing their scattering patterns. Most of the α particles passed through the foil, indicating that atoms are mostly empty space. Some α particles were deflected, suggesting the presence of a dense, positively charged nucleus."
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Summary of Atomic Structure:"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="@string/Summary"
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/summaryImg"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="4dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:src="@drawable/summary" />
+
+            <TextView
+                android:id="@+id/headingAtomicNumbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Atomic Numbers"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/atomicNumberImg"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="4dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:src="@drawable/notation_of_atom" />
+
+            <TextView
+                android:id="@+id/headingAtomicNumbers2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Nuclear Notation"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/notation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="@string/Notation"
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingAtomicPeriodicTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Atomic Number in the Periodic Table"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/AtomicPeriodicTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="@string/AtomicNumber"
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingMassNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Mass Number"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/MassNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="@string/MassNumber"
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingIsotopes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Isotopes"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Isotopes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="@string/Isotopes"
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingCationsAndAnions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Cations &amp; Anions"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/headingBranchesChemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="35dp"
+                android:text="Ion"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentBranchesChemistry3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:layout_marginStart="35dp"
+                android:gravity="start"
+                android:text="@string/Ion"
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingBranchesChemistry14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="35dp"
+                android:text="Cation vs. Anion"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentBranchesChemistry32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:layout_marginStart="35dp"
+                android:gravity="start"
+                android:text="@string/IonvsAnions"
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingPolyatomicIons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Polyatomic Ions"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PolyatomicIons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="@string/PolyatomicIons"
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/headingNamingIons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Naming Ions"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/NamingIons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start"
+                android:text="@string/NamingIons"
+                android:textColor="@color/dark_brown"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

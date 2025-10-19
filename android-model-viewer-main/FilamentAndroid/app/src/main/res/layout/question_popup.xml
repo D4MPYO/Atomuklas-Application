@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <FrameLayout
+        android:id="@+id/questionOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#CCFFFFFF">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/questionCard"
+            android:layout_width="800dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="12dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_rounded_white"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Left side: Question -->
+                <TextView
+                    android:id="@+id/question_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Question?"
+                    android:textSize="22sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <!-- Right side: Choices -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/choice1"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:text="Choice 1"
+                        android:layout_marginBottom="12dp" />
+
+                    <Button
+                        android:id="@+id/choice2"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:text="Choice 2"
+                        android:layout_marginBottom="12dp" />
+
+                    <Button
+                        android:id="@+id/choice3"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:text="Choice 3"
+                        android:layout_marginBottom="12dp" />
+
+                    <Button
+                        android:id="@+id/choice4"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:text="Choice 4"
+                        android:layout_marginBottom="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

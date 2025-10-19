@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Black Top Rectangle with Fixed Height -->
+    <item android:top="0dp" android:height="50dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black"/>
+        </shape>
+    </item>
+
+    <!-- Light Gray Background with Rounded Bottom Corners -->
+    <item android:top="50dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/Grayy"/>
+        </shape>
+    </item>
+
+    <!-- Image at Top-Left Corner -->
+    <item android:top="0dp" android:left="0dp">
+        <bitmap
+            android:gravity="top|left"
+            android:src="@drawable/upper_img"/>
+    </item>
+
+    <!-- Image at Bottom-Right Corner -->
+    <item android:right="0dp" android:bottom="0dp">
+        <bitmap
+            android:gravity="bottom|right"
+            android:src="@drawable/lower_img"/>
+    </item>
+
+</layer-list>

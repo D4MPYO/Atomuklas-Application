@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    tools:context=".MainActivity">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="200dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_historical"
+                    android:padding="1dp">
+
+                    <!-- New TextView Below ASTRO -->
+
+                    <ImageView
+                        android:id="@+id/Header_Img"
+                        android:layout_width="129dp"
+                        android:layout_height="107dp"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="21dp"
+                        android:contentDescription="Concept Image"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/chanllenge_img1" />
+
+                    <TextView
+                        android:id="@+id/Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_toEndOf="@id/Header_Img"
+                        android:fontFamily="@font/anton_regular"
+                        android:text="Astro"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Header"
+
+                        android:fontFamily="@font/anton_regular"
+                        android:layout_toEndOf="@id/Header_Img"
+                        android:text="Challenge"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/anton_regular"
+                android:justificationMode="inter_word"
+                android:text="@string/AstroIntro"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/astro_chall_"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/anton_regular"
+                        android:text="Modeling a Comet"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SubTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Title"
+                        android:layout_marginTop="2dp"
+                        android:layout_toStartOf="@id/imgMath"
+                        android:layout_alignStart="@id/Title"
+                        android:layout_marginEnd="8dp"
+                        android:text="Create a model to learn what comets are made of and how they move in space."
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="10sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <ImageView
+                        android:id="@+id/imgMath"
+                        android:layout_width="101dp"
+                        android:layout_height="77dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/slider_1_img"
+                        android:contentDescription="Math Icon" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Historical Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/astro_chall_1"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Historical_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Build Asteroid Statues"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/Historical_SubTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Historical_Title"
+                        android:layout_marginTop="2dp"
+                        android:layout_toStartOf="@id/Historical_Img"
+                        android:layout_alignStart="@id/Historical_Title"
+                        android:layout_marginEnd="8dp"
+                        android:text="Shape and design asteroid models while exploring their features."
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="10sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <ImageView
+                        android:id="@+id/Historical_Img"
+                        android:layout_width="101dp"
+                        android:layout_height="77dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/slider_1_img"
+                        android:contentDescription="Historical_Img" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Comets Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/astro_chall_2"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Comets_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/anton_regular"
+                        android:text="Asteroid Impact Experiment "
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dsf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Comets_Title"
+                        android:layout_marginTop="2dp"
+                        android:layout_toStartOf="@id/Comets_Img"
+                        android:layout_alignStart="@id/Comets_Title"
+                        android:layout_marginEnd="8dp"
+                        android:text="Create a model to learn what comets are made of and how they move in space."
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="10sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <ImageView
+                        android:id="@+id/Comets_Img"
+                        android:layout_width="101dp"
+                        android:layout_height="77dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:contentDescription="Comets_Img"
+                        android:src="@drawable/slider_1_img" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Asteroids Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/astro_chall_3"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Asteroids_Title"
+                        android:layout_width="196dp"
+                        android:layout_height="46dp"
+                        android:fontFamily="@font/anton_regular"
+                        android:text="Launch a Fireball: Meteor Rocket Challenge"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Asteroids_SubTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Asteroids_Title"
+                        android:layout_alignStart="@id/Asteroids_Title"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toStartOf="@id/Asteroids_Img"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/anton_regular"
+                        android:maxLines="2"
+                        android:text="Launch a small rocket to understand how meteors burn in the sky."
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/Asteroids_Img"
+                        android:layout_width="101dp"
+                        android:layout_height="77dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/slider_1_img"
+                        android:contentDescription="Asteroids_Img" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Fixed Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="32dp"
+        android:layout_height="36dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/back_arrow"
+        android:layout_gravity="top|start" />
+</FrameLayout>
+
+

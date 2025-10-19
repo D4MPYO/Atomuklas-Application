@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_nav_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_library"
+        android:icon="@drawable/ic_nav_library"
+        android:title="Library" />
+    <item
+        android:id="@+id/nav_quiz"
+        android:icon="@drawable/ic_nav_quiz"
+        android:title="Quiz" />
+
+    <item
+        android:id="@+id/nav_accomplishment"
+        android:icon="@drawable/ic_nav_accomplishment"
+        android:title="Accomplishment" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/avatar_icon"
+        android:title="Profile" />
+</menu>

@@ -1,0 +1,288 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_settings">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="32dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/arrow_back_light"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Scroll View -->
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Intro Image -->
+            <ImageView
+                android:id="@+id/intro_img"
+                android:layout_width="190dp"
+                android:layout_height="171dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/module_intro" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/aboutUsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intro_img"
+                android:layout_marginTop="16dp"
+                android:paddingStart="24dp"
+                android:text="CONTENT"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/aboutUsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutUsTitle"
+                android:layout_marginTop="8dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="24dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/IntroContent"
+                android:textColor="@color/dark_brown"
+                android:textSize="16sp" />
+
+            <!-- Card-like Section -->
+            <LinearLayout
+                android:id="@+id/contentCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutUsDescription"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/rounded_white_bg"
+                android:elevation="4dp">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/headingChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="What is Chemistry?"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="The branch of science that focuses on identifying the compounds that makeup matter, examining their characteristics, and figuring out how they interact, combine, and change, as well as using these processes to create new substances. "
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingBranchesChemistry2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Branches of Chemistry"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/headingBranchesChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="35dp"
+                    android:text="Organic Chemistry"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentBranchesChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:layout_marginStart="35dp"
+                    android:gravity="start"
+                    android:text="A branch of chemistry that studies carbon-containing compounds, their structures, properties, reactions, and preparation."
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingInorganicChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="35dp"
+                    android:text="Inorganic Chemistry"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/InorganicChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:layout_marginStart="35dp"
+                    android:gravity="start"
+                    android:text="A branch of chemistry that focuses on compounds that are not primarily carbon-based, including metals, minerals, and salts."
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingAnalyticalChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="35dp"
+                    android:text="Analytical Chemistry"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/AnalyticalChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:layout_marginStart="35dp"
+                    android:gravity="start"
+                    android:text="A branch of chemistry that deals with the analysis of substances to determine their composition and structure, including qualitative and quantitative methods."
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingPhysicalChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="35dp"
+                    android:text="Physical Chemistry"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/PhysicalChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:layout_marginStart="35dp"
+                    android:gravity="start"
+                    android:text="A branch of chemistry that explores the physical and fundamental basis of chemical systems and processes, including thermodynamics, kinetics, and spectroscopy."
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingBiochemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="35dp"
+                    android:text="Biochemistry"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Biochemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:layout_marginStart="35dp"
+                    android:gravity="start"
+                    android:text="A branch of chemistry that studies the chemical processes within living organisms, including the structure, function, and reactions of biomolecules."
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/headingWhyChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Why Study chemistry?"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentWhyChemistry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:gravity="start"
+                    android:text="The study of chemistry is an incredibly fascinating subject. Since chemistry is so essential to our planet, it affects practically every part of our lives and plays a part in everyone's lives. Our basic needs—clean air, water, and soil; food, clothing, housing, health, and energy—all depend on chemistry. Chemical technologies improve our quality of life in many ways by offering fresh approaches to issues related to materials, energy use, and health. Thus, learning chemistry is useful in preparing us for the actual world."
+                    android:textColor="@color/dark_brown"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

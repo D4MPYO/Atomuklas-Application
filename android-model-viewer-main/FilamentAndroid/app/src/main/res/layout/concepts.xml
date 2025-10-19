@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    tools:context=".MainActivity">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="0dp">  <!-- Space for the fixed button -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="200dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_header"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/Header_Img"
+                        android:layout_width="133dp"
+                        android:layout_height="84dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Concept Image"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/concept_header" />
+
+                    <TextView
+                        android:id="@+id/Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_toEndOf="@id/Header_Img"
+                        android:fontFamily="@font/anton_regular"
+                        android:text="Concepts"
+                        android:textColor="@color/white"
+                        android:textSize="38sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <!-- Intro to Astro Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/astroCard"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_intro"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/anton_regular"
+                        android:text="Introduction to Astronomy"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SubTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Title"
+                        android:layout_alignStart="@id/Title"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toStartOf="@id/imgMath"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/anton_regular"
+                        android:maxLines="2"
+                        android:text="The study of celestial objects, space, and the universe."
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imgMath"
+                        android:layout_width="101dp"
+                        android:layout_height="77dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="17dp"
+                        android:contentDescription="Math Icon"
+                        android:src="@drawable/slider_1_img" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Historical Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/historyCard"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_historical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Historical_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Historical Figures"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/Historical_SubTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Historical_Title"
+                        android:layout_marginTop="2dp"
+                        android:layout_toStartOf="@id/Historical_Img"
+                        android:layout_alignStart="@id/Historical_Title"
+                        android:layout_marginEnd="8dp"
+                        android:text="Scientists and astronomers who shaped our understanding of space."
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="10sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <ImageView
+                        android:id="@+id/Historical_Img"
+                        android:layout_width="101dp"
+                        android:layout_height="77dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="17dp"
+                        android:src="@drawable/slider_1_img"
+                        android:contentDescription="Historical_Img" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Comets Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CometsCard"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_comets"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Comets_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comets "
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/Comets_SubTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Comets_Title"
+                        android:layout_marginTop="2dp"
+                        android:layout_toStartOf="@id/Comets_Img"
+                        android:layout_alignStart="@id/Comets_Title"
+                        android:layout_marginEnd="8dp"
+                        android:text="Icy bodies from the outer solar system that form tails near the Sun."
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="10sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <ImageView
+                        android:id="@+id/Comets_Img"
+                        android:layout_width="101dp"
+                        android:layout_height="77dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="17dp"
+                        android:src="@drawable/slider_1_img"
+                        android:contentDescription="Comets_Img" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Asteroids Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/asteroidsCard"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_asteroids"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Asteroids_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Asteroids"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/Asteroids_SubTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Asteroids_Title"
+                        android:layout_marginTop="2dp"
+                        android:layout_toStartOf="@id/Asteroids_Img"
+                        android:layout_alignStart="@id/Asteroids_Title"
+                        android:layout_marginEnd="8dp"
+                        android:text="Rocky objects orbiting the Sun, mainly in the asteroid belt"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="10sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <ImageView
+                        android:id="@+id/Asteroids_Img"
+                        android:layout_width="101dp"
+                        android:layout_height="77dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="17dp"
+                        android:src="@drawable/slider_1_img"
+                        android:contentDescription="Asteroids_Img" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Meteors Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/meteorsCard"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_meteors"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Meteors_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meteors"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/Meteors_SubTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Meteors_Title"
+                        android:layout_marginTop="2dp"
+                        android:layout_toStartOf="@id/Meteors_Img"
+                        android:layout_alignStart="@id/Meteors_Title"
+                        android:layout_marginEnd="8dp"
+                        android:text="Space debris that burns up in Earth’s atmosphere, creating streaks of light."
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="10sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <ImageView
+                        android:id="@+id/Meteors_Img"
+                        android:layout_width="101dp"
+                        android:layout_height="77dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="17dp"
+                        android:src="@drawable/slider_1_img"
+                        android:contentDescription="Asteroids_Img" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Importance Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/importanceCard"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_importance"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/Importance_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Importance"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/Importance_SubTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Importance_Title"
+                        android:layout_marginTop="2dp"
+                        android:layout_toStartOf="@id/Importance_Img"
+                        android:layout_alignStart="@id/Importance_Title"
+                        android:layout_marginEnd="8dp"
+                        android:text="How astronomy expands knowledge, advances technology, and reveals our place in the universe."
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/anton_regular"
+                        android:textSize="10sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <ImageView
+                        android:id="@+id/Importance_Img"
+                        android:layout_width="101dp"
+                        android:layout_height="77dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp"
+                        android:src="@drawable/slider_1_img"
+                        android:contentDescription="Asteroids_Img" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Fixed Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/arrow_back_light"
+        android:src="@drawable/back_arrow" />
+
+</FrameLayout>

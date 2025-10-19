@@ -1,0 +1,427 @@
+<resources>
+    <string name="app_name">Atomuklas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Intro">Sharpen your mind and abilities with this practice test, designed to critically assess your understanding scientific concepts, and deepen your grasp of these celestial phenomena.</string>
+
+    <string name="QuizzIntro">Ready to put your knowledge to the test? Dive in, enjoy the questions, and see how much you know</string>
+
+    <string name="AstroIntro">Astro Challenges is a series of engaging, hands-on activities designed to deepen understanding and
+        spark curiosity about the wonders of space. Through interactive experiences, students develop critical thinking,
+        creativity, and a stronger connection to astronomical concepts, making learning both meaningful and exciting.</string>
+
+    <string name="CometsText"><font color="#FFFFFF">COMETS:</font> This is blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh.</string>
+    <string name="CometsTextCharacteristics"><font color="#FFFFFF">CHARACTERISTICS:</font> This is blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh.</string>
+    <string name="CometsTextSpeed"><font color="#FFFFFF">SPEED:</font> This is blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. </string>
+    <string name="CometsTextSize"><font color="#FFFFFF">SIZE:</font> This is blahh blahh blahh.blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh.</string>
+
+    <string name="AsteroidsText"><font color="#FFFFFF">ASTEROIDS:</font> This is blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh.</string>
+    <string name="AsteroidsTextCharacteristics"><font color="#FFFFFF">CHARACTERISTICS:</font> This is blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh.</string>
+    <string name="AsteroidsTextSpeed"><font color="#FFFFFF">SPEED:</font> This is blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. </string>
+    <string name="AsteroidsTextSize"><font color="#FFFFFF">SIZE:</font> This is blahh blahh blahh.blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh.</string>
+
+    <string name="MeteorsText"><font color="#FFFFFF">METEORS:</font> This is blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh.</string>
+    <string name="MeteorsTextCharacteristics"><font color="#FFFFFF">CHARACTERISTICS:</font> This is blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh.</string>
+    <string name="MeteorsTextSpeed"><font color="#FFFFFF">SPEED:</font> This is blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. </string>
+    <string name="MeteorsTextSize"><font color="#FFFFFF">SIZE:</font> This is blahh blahh blahh.blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh.</string>
+
+
+    <string name="IntroAstroText"><font color="#FFFFFF">COMETS:</font> This is blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh blahh . blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh. blahh blahh blahh.</string>
+
+    <string name="privacy_policy">
+    <![CDATA[
+    <b>Effective Date:</b> [Insert Date]<br/>
+    <b>Last Updated:</b> [Insert Date]<br/><br/>
+
+    Welcome to <b>Atomuklas!</b> Your privacy is important to us, and we are committed to protecting your data while providing an engaging and interactive learning experience.
+    This Data Privacy Policy explains how Atomuklas collects, uses, and protects your information when you use our mobile application.<br/><br/>
+
+    <font color="#FFFFFF"><b>1. No Account Registration Required</b></font><br/>
+    Atomuklas is designed for easy access, meaning no sign-in or sign-up is required to use the app.
+    You can start learning immediately without providing personal details such as your name, email, or contact information.<br/><br/>
+
+    <font color="#FFFFFF"><b>2. Online and Offline Functionality</b></font><br/>
+    Atomuklas can be used both online and offline, ensuring uninterrupted learning.
+    When online, users may access additional resources, updates, and content synchronization.
+    Offline, users can still access saved lessons, quizzes, and progress tracking without needing an internet connection.<br/><br/>
+
+    <font color="#FFFFFF"><b>3. Information We Collect</b></font><br/>
+    Since no user account is required, Atomuklas collects minimal data. However, to improve the user experience, we may store the following information locally on your device:<br/>
+    - <b>Learning Progress:</b> Scores, completed lessons, and quiz results are saved on your device.<br/>
+    - <b>App Preferences:</b> Settings like dark mode, sound preferences, and notification settings.<br/>
+    - <b>Error Reports:</b> If the app crashes or encounters issues, we may collect anonymous technical data to improve performance.<br/><br/>
+
+    <font color="#FFFFFF"><b>4. How We Use Your Information</b></font><br/>
+    Atomuklas uses the locally stored data to:<br/>
+    - <b>Track Your Progress:</b> Your quiz results and completed lessons help personalize your learning journey.<br/>
+    - <b>Enhance User Experience:</b> Settings and preferences ensure a seamless experience tailored to your needs.<br/>
+    - <b>Improve App Performance:</b> Anonymous error reports help us identify and fix bugs.<br/><br/>
+
+    <font color="#FFFFFF"><b>5. Data Security and Privacy Protection</b></font><br/>
+    To ensure your data remains safe, Atomuklas follows strict security measures:<br/>
+    - <b>Local Data Storage:</b> All progress and preferences are stored on your device, not on external servers.<br/>
+    - <b>No Third-Party Tracking:</b> We do not share, sell, or track your data for advertising or marketing purposes.<br/>
+    - <b>No Internet Dependency:</b> Since Atomuklas works offline, there is minimal risk of data exposure.<br/><br/>
+
+    <font color="#FFFFFF"><b>6. Managing Your Data</b></font><br/>
+    Because Atomuklas does not store user data on cloud servers, users have complete control over their information:<br/>
+    - <b>Clear Learning History:</b> You can reset your progress anytime through the app settings.<br/>
+    - <b>Delete App Data:</b> If you uninstall the app, all stored data is permanently removed from your device.<br/><br/>
+
+    <font color="#FFFFFF"><b>7. Updates to This Privacy Policy</b></font><br/>
+    We may update this policy as we improve Atomuklas. Any changes will be communicated through the app or our official website.<br/><br/>
+
+    <font color="#FFFFFF"><b>8. Contact Us</b></font><br/>
+    If you have any questions or concerns about privacy and security, feel free to contact us:<br/>
+    📧 <b>Email:</b> [Insert Contact Email]<br/>
+    📞 <b>Phone:</b> [Insert Contact Number]<br/>
+    📍 <b>Address:</b> [Insert Office Address]<br/><br/>
+
+    By using Atomuklas, you acknowledge that you have read and understood this Data Privacy Policy and agree to its terms.
+    ]]>
+</string>
+
+    <string name="about_atomuklas">ATOMUKLAS is an educational mobile application designed to make learning chemistry engaging and interactive. Our team has crafted this application to help students visualize atomic models and understand complex theories through an immersive digital learning experience.\n\nOur mission is to transform chemistry education by making abstract concepts tangible through interactive 3D models, challenging quizzes and tests, and practical worksheets tailored to student levels.</string>
+
+    <string name="lorem"><p>Lorem ipsum dolor sit amet. Sed rerum obcaecati ea voluptatem labore hic eligendi reprehenderit est sint optio aut ratione impedit non dolorem esse. Non sint suscipit ab ipsa nihil et exercitationem odit. Et provident expedita ut molestiae quis qui facere placeat. Aut dolores nihil et voluptas laboriosam quo ipsa porro et iste consequatur. Est ullam enim sit atque similique aut rerum voluptatem aut Quis facilis et voluptatem inventore et nemo voluptates vel reiciendis similique. Est placeat provident aut ducimus quos a explicabo aperiam. At quibusdam saepe ut odio deleniti aut rerum suscipit in numquam repudiandae quo itaque harum qui quia dignissimos. Aut reiciendis rerum qui corrupti optio id dicta voluptatem! Ex rerum quisquam qui perspiciatis rerum est iusto nihil et laborum nostrum qui earum harum? Ea autem fugiat et tempora galisum qui odit voluptas. Rem obcaecati quia et nihil quisquam hic illo adipisci aut iure veniam ea unde suscipit est voluptatem consequatur. Aut pariatur distinctio qui ipsam veniam At corporis perferendis. In magnam beatae qui ratione soluta qui eius itaque id laudantium optio eum facere labore id voluptatem maxime. Ut delectus molestias aut porro nobis ut amet repellendus ab quod velit est fugiat earum? </p><p>Ut quos commodi qui voluptas porro non illo dolorem. Ut laudantium iure est voluptatem quia et mollitia obcaecati et odio nisi qui illum fugiat. Sed voluptatem optio aut nemo explicabo quo explicabo veniam sed explicabo animi ab unde nulla aut atque autem cum sunt ipsam. Ea expedita vero in maiores exercitationem ut impedit rerum nam molestiae fugit non autem omnis ea rerum nihil et labore galisum. Rem voluptas dolor ab tempora quia ab quam aspernatur quo quae maxime quo nemo dolor ut dolore quia. Aut atque excepturi aut alias dolor et provident enim eum quos velit non accusantium optio est vitae voluptate qui harum minima. In consequatur eligendi ut accusamus odit qui doloremque vitae ad repellat iste. In velit tempora qui enim aliquid qui placeat excepturi. Et alias Quis et possimus molestiae sed aperiam placeat! Et consequatur odit sit magnam debitis et consequatur distinctio. Ab soluta tempora aut animi esse est labore omnis sed omnis asperiores eum facere voluptatibus. </p><p>Est aperiam repudiandae et voluptates molestiae aut asperiores rerum rem obcaecati ipsum. Nam officiis esse id voluptatum laborum et recusandae totam eos dolorum rerum. Qui fugit neque id dolore eius rem ducimus nostrum. Qui voluptas dolor in minus tenetur At aliquam omnis ut officia galisum. Ut sunt mollitia ea deserunt iure qui recusandae debitis aut saepe quidem. Ut voluptas neque et veritatis galisum aut quisquam quas. In iure atque sit doloribus voluptatibus rem nihil accusamus sed dolores provident et voluptatem quia? Sed minima perspiciatis ea culpa fugit et distinctio officiis ex aliquid enim ut molestiae aliquam ut soluta itaque aut quia iure? Sed quia debitis sit iste aspernatur qui libero facere qui dolorem quasi qui aliquid adipisci non quibusdam consequatur sit doloribus deleniti. Sit ipsa consequatur a voluptatibus voluptatem id similique veritatis. Ut incidunt repellat eum corporis amet non sunt omnis. Et fugiat exercitationem 33 adipisci neque quo corrupti accusamus et cupiditate dolores vel fugiat fugit. Aut adipisci inventore id cumque illo aut voluptatem debitis ad enim reprehenderit. Qui quis ipsa et dolorem quam aut temporibus tempora aut cumque expedita ut sint similique. </p>
+</string>
+
+    <string name="IntroContent">What is Chemistry? \nBranches of Chemistry \nWhy study Chemistry?</string>
+
+    <string name="ContextElements"> Elements are fundamental substances that cannot be broken down into simpler substances. They are categorized as metals and nonmetals based on their properties. Metals are characterized by their conductivity, malleability, and ductility.\n
+        \nOnly 7 elements are found as diatomic molecules in nature: H2, N2, O2, F2, Cl2, Br2, I2; the other elements are monatomic. Chemical symbols are abbreviations used to denote the elements.\n
+        \nExample: \nH = Hydrogen, He = Helium, Li = Lithium
+</string>
+
+    <string name="Electrons">Electrons are negatively charged subatomic particles discovered by Thomson in 1897 by deflecting cathode rays (electrons) through electric and magnetic fields. The electron has a negative charge and is located in shells that orbit the nucleus.\n
+        \nMillikan\'s oil drop experiment provided a more precise measurement of the electron\'s charge, allowing for the determination of the absolute charge of the electron: e = 1.602177 x 10-19 C.\n
+</string>
+
+    <string name="Summary">
+    Proton: located in the nucleus, charge = +1, mass &#8776; 1 amu = 1.661 × 10⁻²⁷ kg&#10;\n
+    Neutron: located in the nucleus, charge = 0, mass &#8776; 1 amu&#10;\n
+    Electron: located outside the nucleus, charge = -1, mass = 5.5 × 10⁻⁴ amu &lt;&lt; 1 amu&#10;\n
+    ⇒ Despite their small size, atoms contain most of their mass in the nucleus.
+</string>
+
+    <string name="Notation">
+        X: Element symbol representing a specific element.
+        \nZ: Atomic number = number of protons in the nucleus
+        \nEach element is characterized by a unique atomic number.
+        \nA: Mass number = number of protons + number of neutrons = number of nucleons.
+        \nNumber of neutrons = A - Z
+        \nNumber of electrons = number of protons - charge
+    </string>
+
+    <string name="AtomicNumber">
+        The <font color="#9f2b00"><b>atomic number</b></font> is defined as the <font color="#9f2b00"><b>number of protons</b></font> found in the nucleus of an atom, which uniquely identifies its element.
+        It is denoted by the symbol Z. Each element on the periodic table has its own unique atomic number,
+        which is also referred to as the proton number.
+    </string>
+
+    <string name="MassNumber">The mass of an atom is mostly ascribed to a nucleus, which consists of protons and neutrons.
+        The total number of protons and neutrons is called the mass number. Therefore, the mass number well approximates to
+        the mass of an atom or molecule. Meanwhile, the number of protons is called an atomic number, which characterizes
+        chemical features of the element.\n
+
+        \nThe value of the mass number can be calculated with the following formula:\n
+        \nMass number (A) = atomic number (Z) + number of neutrons (N).
+        \nIncreasing the atomic number, the mass number increases.
+</string>
+
+    <string name="Isotopes">
+        Atoms of the same element with different numbers of neutrons. Most elements exist naturally as mixtures of isotopes. Stable isotopes do not emit radiation, and unstable isotopes do emit radiation.\n
+
+        \n<font color="#9f2b00"><b>Example: Carbon-14 (C-14)</b></font>
+        \nProton number (Z) = 6 (from the periodic table for carbon)
+        \nElectron number = Proton number = 6 (in a neutral atom)
+        \nNeutron number = Mass number (14) – Proton number (6) = 8\n
+
+        \n<font color="#9f2b00"><b>Example: 146C</b></font>
+        \nProton number (Z) = 6 (either from the lower number or from the periodic table for carbon)
+        \nElectron number = Proton number = 6 (in a neutral atom)
+        \nNeutron number = Mass number (14) – Proton number (6) = 8
+    </string>
+
+    <string name="Ion">
+        An ion is an atom or molecule that has gained or lost one or more electrons, resulting in a positive or negative charge.\n
+
+        \nThe number of electrons gained or lost by an atom is related to its position in the periodic table. Atoms tend to gain or lose electrons to achieve the electron configuration of the nearest noble gas.\n
+
+        \nThe atomic number of sodium Na is Z = 11 ⇒ 11 protons
+        \nNa is neutral ⇒ 11 electrons
+        \nCation Na+ is positively charged ⇒ loss of 1 electron
+
+    </string>
+
+    <string name="IonvsAnions">
+        The loss of an electron from an atom or molecule results in the formation of a cation, which carries a net positive charge. Some examples of cations are:\n
+
+        \nSodium ion (Na+)
+        \nPotassium ion (K+)
+        \nCalcium ion (Ca2+)
+        \nMagnesium ion (Mg2+)\n
+
+        \nAnions are negatively charged ions due to the gain of electrons, for this reason they are larger and heavier. The most common anions are those formed from nonmetals on the periodic table.\n
+
+        \nSome examples of anions are:
+        \nChloride ion (Cl-)
+        \nSulfate ion (SO42-)
+        \nNitrate ion (NO3-)
+        \nHydroxide ion (OH-)
+    </string>
+
+    <string name="PolyatomicIons">
+        In addition to these, there are other, more specific types of ions, such as polyatomic ions, which are electrically charged molecules made up of several atoms.\n
+
+        \nSome examples are:
+        \nCarbonate ion (CO32-)
+        \nAmmonium ion (NH4+)
+        \nSulfate ion (SO42-)
+    </string>
+
+    <string name="NamingIons">
+        Monatomic cations:
+        \nMonatomic cations are named by adding the word "ion" to the name of the element. For elements with multiple possible charges (especially the transition metals), Roman numerals are used to indicate the charge.\n
+
+        \nMg2+ = magnesium ion
+        \nFe2+ = iron(II) ion
+        \nFe3+ = iron(III) ion\n
+
+        \nMonatomic anions are named by changing the ending of the element name to "-ide" and adding the word "ion".\n
+
+        \nCl- = chloride ion
+        \nO2- = oxide ion\n
+
+        \nOxoanions are polyatomic anions that contain one or more oxygen atoms and one central atom of another element. They often occur in a series of 2 or more ions with the same central atom but different numbers of oxygens.\n
+
+        \nThe most common form of the oxoanions in a series is named by changing the ending of the central element\'s name to "-ate" and adding the word "ion"\n
+
+        \nthe ion with 1 less oxygen than the most common ionic form is called -ite ion
+        \nthe ion with 2 fewer oxygens than the most common ionic form is called hypo- \.\.\. -ite ion
+        \nthe ion with 1 more oxygen than the most common ionic form is called per- \.\.\. -ate ion\n
+
+        \nClO3- = chlorate ion = most common form
+        \nClO2- = chlorite ion
+        \nClO- = hypochlorite ion
+        \nClO4- = perchlorate ion
+    </string>
+
+    <string name="democritus">
+        The <font color="#9f2b00"><b>Democritus</b></font> atomic model is one of the earliest known theories about the nature of matter. Democritus of Abdera, a Greek philosopher who lived around the 5th century BC, was one of the first to propose that everything in existence is composed of tiny, indivisible particles called "atoms" (from the Greek "á-tomos," meaning "without division").\n
+
+        \nDemocritus\' atomic model suggests that atoms are the smallest indivisible parts of matter, infinite in number, eternal, and uncreated. He believed the qualities of an object come from the types of atoms that compose it. Later, Epicurus and Lucretius refined and expanded on this theory, adding depth to its philosophical and scientific interpretation.\n
+
+        \n<font color="#9f2b00"><b>Key Principles of Democritus\' Atomic Model</b></font>
+        \nThe most important elements that define the atomic model proposed by Democritus are the following:
+
+        \n• Indivisibility of atoms
+        \n• Matter is composed of indivisible particles called atoms.\n
+
+
+        \nThe Greek atomic theory is significant historically and philosophically, but it was not based on observations of nature, measurements, tests, or experiments. Instead, the Greeks used mathematics and reason almost exclusively when they wrote about physics. Because of the influence of Aristotle, who did not agree with Democritus and other proponents of atomic philosophy, this theory was basically ignored for nearly 2,000 years.
+    </string>
+
+    <string name="SOLIDSPHEREMODEL">
+        The first scientific model of the atom was proposed by John Dalton in the early 19th century. Dalton described atoms as solid, indivisible spheres, similar to tiny billiard balls. His key ideas were:\n
+
+        \n• Atoms are the basic building blocks of matter.
+        \n• Each element is made of one type of atom.
+        \n• Atoms of different elements combine in fixed ratios to form compound.
+
+    </string>
+
+    <string name="AtomicTheory">
+         The following are the main postulates of Dalton’s Atomic Theory;\n
+
+        \n1. All matter is made up of tiny, indivisible particles called atoms.\n
+        \n2. All atoms of a specific element are identical in mass, size, and other properties. However, atoms of different elements exhibit different properties and vary in mass and size.\n
+        \n3. Atoms can neither be created nor destroyed. Furthermore, atoms cannot be divided into smaller particles.\n
+        \n4. Atoms of different elements can combine with each other in fixed whole-number ratios in order to form compounds.\n
+        \n5. Atoms can be rearranged, combined, or separated in chemical reactions.\n
+    </string>
+    
+    <string name="SIGNIFICANCE">
+        Dalton\'s atomic model was instrumental in the development of other key scientific theories, such as atomic orbital theory. It influenced the development of the periodic table of elements, which was organized by Dmitri Mendeleev in 1869, based on the relationship between the properties of elements and their atomic masses. This advance made it possible to classify elements in a consistent manner and to predict the properties of elements that had not yet been discovered.
+    </string>
+
+    <string name="LIMITATION">
+        \n• Dalton\’s atomic theory stated that atoms were indivisible. However, the discovery of subatomic particles (such as protons, electrons, and neutrons) disproved this postulate.\n
+
+        \n• According to Dalton, all atoms of an element have identical masses and densities. However, different isotopes of elements have different atomic masses.\n
+
+        \n• The theory states that the masses of the atoms of two different elements must differ. However, it is possible for two different elements to share the same mass number.\n
+
+        \n• Certain complex organic compounds do not feature simple ratios of constituent atoms.
+    </string>
+
+    <string name="CONCLUSION">
+        Dalton\'s atomic theory marked the beginning of a new era in science. Although his model turned out to be simplified and incorrect, it laid the groundwork for a deeper understanding of atomic structure and the laws governing interactions between elements. Over time, atomic theory evolved as new discoveries were made. Models such as those of Rutherford , Bohr , and eventually other modern theories expanded our understanding of the atom.
+    </string>
+
+    <string name="plummMOdel">
+        Thomson\'s <font color="#9f2b00"><b>plum pudding model</b></font> describes an atom as electrons embedded within a positively charged "cloud." This positive "soup" balances the electrons\' negative charges, keeping them stable. Electrons move freely but are pulled toward the center by the attractive force of the positive charge. It\'s an early theory before the discovery of atomic nuclei.
+        
+    </string>
+    
+    <string name="THOMSONPOSTULATES">
+        J. J. Thomson\'s atomic model introduced several key postulates that sought to explain the observed properties of atoms at the time. Here are the key postulates and their features:\n
+
+        \n1. Thomson postulated the existence of negatively charged subatomic particles, which were later identified as electrons.\n
+        \n2. Thomson imagined the atom as a uniform sphere of positive charge, where the negatively charged electrons were embedded.\n
+        \n3. According to Thomson\'s model, electrons were distributed uniformly throughout the positively charged sphere.\n
+        \n4. Electrons were considered to be able to move freely within the positively charged sphere, which explained the stability of the atom.\n
+        \n5. Thomson proposed that electrons rotated freely in ring-shaped orbits within the atom.
+    </string>
+
+    <string name="SIGNIFICANCEJJ">
+        Thomson Atomic Model may have proven inaccurate, it was significant in advancing atomic theory and modern physics. It transformed subsequent research and experimentation. It challenged the idea that atoms are indivisible and unchangeable entities, a belief held by ancient philosophers. The model\’s acted as a source of inspiration for Niels Bohr, who developed his quantum model of the atom, successfully integrating classical and quantum mechanics.
+
+    </string>
+
+    <string name="LIMITATIONJJ">
+        Thomson\’s atomic model had several limitations that were eventually overcome by further research and the experiments of various scientists later on. Some of the limitations of Thomson’s Atomic Model are:\n
+
+        \n• This model did not account for the presence of positively charged particles in the atom, which were later identified as protons by Ernest Rutherford.\n
+        \n• The model could not explain the results of the gold foil experiment conducted by Rutherford.\n
+        \n• The model could not explain the phenomenon of atomic spectra, which is the emission and absorption of specific wavelengths of light by atoms.\n
+        \n• The model did not explain the presence of Isotopes.\n
+
+        \nDespite these limitations, Thomson\’s Atomic Model is an important step in the development of Atomic Theory and only after this theory, there came various theories that provide a better understanding of Atoms.
+
+    </string>
+
+    <string name="NUCLEARMODEL">
+        According to Rutherford\’s Atomic Model, the positively charged particles and the majority of the mass of an atom were said to be concentrated in a small volume. He referred to this area of the atoms as the nucleus. Another idea put forward by Rutherford\’s model of an atom was that an atom’s nucleus should be surrounded by negatively charged electrons. Rutherford also suggested that the electrons circle the nucleus at the speed of light. He called these elliptical paths orbits.\n
+
+        \nIn 1909, Ernest Rutherford and his team conducted the famous gold foil experiment. They fired alpha particles (positively charged particles) at a thin sheet of gold foil and expected the particles to pass straight through, as predicted by the plum pudding model.
+
+    </string>
+
+    <string name="FoilExp">
+        Rutherford teamed up with his assistant, Hans Geiger and Ernst Marsden who was an undergraduate student working in Rutherford’s lab; conducted the “<font color="#9f2b00"><b>Gold Foil Experiment</b></font>” also known as the Geiger-Marsden experiment. His idea was to probe the structure of Atoms by firing α-particles or helium ions, at thin metal foils (Gold Foil).
+
+    </string>
+
+    <string name="Exp2nd">
+        In this experiment, Rutherford used Gold Foil which was an extremely thin sheet and was bombarded with positively charged α-particles. He used α-particles because they are very energetic and are heavier than other particles. Lead container acted as a source for α-particles. Since he thought that the atom had a pudding-like structure, with electrons and positively charged particles embedded in it, he expected that the α-particles would just pass through.\n
+
+        \nInstead he found that the α-particles scattered through different angles. The scattered particles were detected by the fluorescent screen which emitted fluorescent spikes. He observed that most of the particles passed through the gold foil with very little deflection or no deflection at all. Few particles scattered at large angles. This experiment proved that the entire mass of an Atom is located at the center and was named <font color="#9f2b00"><b>Nucleus</b></font>.
+
+    </string>
+
+    <string name="POSTULATES2">
+        Here are the major postulates of Rutherford’s atomic model based on observations and conclusions of the gold foil experiment:\n
+
+        \n1. Positively charged particles make up an atom.\n
+        \n2. The electrons that surround an atom’s nucleus are negatively charged particles.\n
+        \n3. Since electrons are negatively charged and the tightly packed nucleus is positively charged, an atom either has no net charge or is electrically neutral.
+
+    </string>
+
+    <string name="LIMITATIONRuth">
+        Rutherford\’s atomic model was experimentally successful and widely accepted by scientists. However, it was unable to explain certain critical aspects of atoms.\n
+
+        \n• Rutherford\'s model couldn\'t explain the atom\'s stability. His observations showed electrons moving at high speeds in circular orbits, which contradicted Maxwell\’s findings. Maxwell stated that accelerated charged particles emit electromagnetic radiation, meaning electrons should constantly emit radiation. Rutherford’s model did not account for this.\n
+        \n• Rutherford\’s atomic model is incomplete because it does not explain any arrangement of electrons in orbit.\n
+        \n• Rutherford model hypothesis was later debunked by the discovery of protons and neutrons.\n
+        \n• Rutherford thought electrons moved quickly in circular paths around the nucleus. However, later research showed that this idea was incorrect.
+
+    </string>
+
+    <string name="PlanetaryModel">
+        Each shell has a specific energy level, and electrons cannot exist outside of these orbits. The closer the shell is to the nucleus, the smaller the energy of that shell. For an electron to move to another shell it must absorb or release energy. The amount of energy absorbed or emitted is dependent on the difference in energy between the shells. The energy radiated by the electron while jumping from a higher atomic orbital to a lower atomic orbital.
+
+    </string>
+
+    <string name="BohrModel2">
+    <i>The lithium Bohr model. Electrons (blue) orbit in circular shells around the nucleus (red)</i>
+</string>
+
+    <string name="BohrModel3">
+    <i>When an electron moves to a smaller shell, it releases energy which we observe as light</i>
+</string>
+
+    <string name="POSTULATESBohr">
+        The major postulates of Bohr’s Atomic Model are;\n
+
+        \n1. In an atom, electrons revolve around the nucleus in some fixed circular orbits called shells.\n
+        \n2. These shells are also called Stationary Orbits.\n
+        \n3. Electrons while revolving in these orbits do not lose any energy. Also, each cell has a fixed energy associated with it.\n
+        \n4. The energy of an electron revolving in a stationary orbit remains constant. Energy is emitted from an atom only when an electron jumps from the orbit of higher energy to the orbit having low energy.\n
+        \n5. When an electron jumps from one energy level to another energy level it radiates energy.
+    </string>
+
+    <string name="HYDROGENATOM">The Bohr model of the hydrogen atom was the first atomic model to successfully explain the radiation spectra of atomic hydrogen. Niels Bohr introduced the atomic Hydrogen model in the year 1913. It holds a special place in history as it gave rise to quantum mechanics by introducing quantum theory.</string>
+
+    <string name="SIGNIFICANCEBhor">
+        Bohr was the first to discover that electrons travel in various orbits around the nucleus and that the amount of electrons in the valence shell may be used to define an element\'s characteristics. Bohr model and offer a more thorough comprehension of behavior of atoms and molecules.
+    </string>
+    
+    <string name="LIMITATIONBohr">
+        The Bohr model cannot explain the splitting of spectral lines when they are influenced by an electric field (Stark effect) and a magnetic field (Zeeman Effect). It did not explain how atoms can form molecules through chemical bonds.\n
+
+        \n• The electrons revolving around the nucleus are considered on a planar dimension in the Bohr plan.\n
+        \n• Inability to predict large-sized atoms and explain the spectrum of atoms with only two electrons, such as the helium atom.\n
+        \n• It violated Heisenberg’s Principle. This principle states that it is impossible to determine the precise position and momentum of electrons at the same time.
+    </string>
+
+
+
+    <string name="references_text"><![CDATA[
+Atomic structure - JEE Preparation Guide. (n.d.). BYJU\'s. Retrieved from<br/>
+<a href="https://byjus.com/jee/atomic-structure/">https://byjus.com/jee/atomic-structure/</a><br/><br/>
+
+Atoms and molecules: General chemistry 1. (n.d.). Chemistry Coach. Retrieved from<br/>
+<a href="https://chemistry.coach/general-chemistry-1/atoms-and-molecules">https://chemistry.coach/general-chemistry-1/atoms-and-molecules</a><br/><br/>
+
+Atomic model: Definition, history, development, examples, & facts. (n.d.). Britannica. Retrieved from<br/>
+<a href="https://byjus.com/chemistry/atomic/">https://byjus.com/chemistry/atomic/</a><br/><br/>
+
+Dalton\'s atomic theory. (n.d.). BYJU\'s Chemistry Guide. Retrieved from<br/>
+<a href="https://byjus.com/chemistry/daltons-atomic-theory/">https://byjus.com/chemistry/daltons-atomic-theory/</a><br/><br/>
+
+Ernest Rutherford. (n.d.). Science Kids Fact Guide. Retrieved from<br/>
+<a href="https://www.sciencekids.co.nz/sciencefacts/scientists/ernestrutherford.html">https://www.sciencekids.co.nz/sciencefacts/scientists/ernestrutherford.html</a><br/><br/>
+
+Niels Bohr and his atomic theory. (n.d.). Live Science. Retrieved from<br/>
+<a href="https://www.livescience.com/32016-niels-bohr-atomic-theory.html">https://www.livescience.com/32016-niels-bohr-atomic-theory.html</a><br/><br/>
+
+NEDU. (2021). Chemistry made easy: An illustrated study guide for students to easily learn chemistry. NEDU LLC.<br/><br/>
+
+Rex Publishing. (2023). STEAM for all 8 (Science, Technology, Engineering, Arts, and Mathematics). Rex Publishing.<br/><br/>
+
+Rex Publishing. (n.d.). Science Links 8. Rex Interactive. Retrieved from<br/>
+<a href="https://www.rexinteractive.com">https://www.rexinteractive.com</a><br/><br/>
+
+Rutherford\'s atomic model and gold foil experiment. (n.d.). Electrical Fundablog. Retrieved from<br/>
+<a href="https://electricalfundablog.com/rutherfords-atomic-model-gold-foil-experiment/">https://electricalfundablog.com/rutherfords-atomic-model-gold-foil-experiment/</a><br/><br/>
+
+Rutherford\'s contributions to physics. (n.d.). Physics of the Universe. Retrieved from<br/>
+<a href="https://www.physicsoftheuniverse.com/scientist">https://www.physicsoftheuniverse.com/scientist</a><br/><br/>
+
+Rutherford\'s atomic model. (n.d.). Geeks for Geeks. Retrieved from<br/>
+<a href="https://www.geeksforgeeks.org/rutherfords-atomic-model/?ref=header_outind">https://www.geeksforgeeks.org/rutherfords-atomic-model/?ref=header_outind</a><br/><br/>
+
+Subatomic particles. (n.d.). Science Notes. Retrieved from<br/>
+<a href="https://sciencenotes.org/subatomic-particles/">https://sciencenotes.org/subatomic-particles/</a><br/><br/>
+
+Tutorant. (2024). How the atomic model has changed over time. Retrieved from<br/>
+<a href="https://www.tutorant.co.uk/2024/10/how-atomic-model-has-changed-over-time.html">https://www.tutorant.co.uk/2024/10/how-atomic-model-has-changed-over-time.html</a><br/><br/>
+
+Bohr\'s atomic model. (n.d.). Geeks for Geeks. Retrieved from<br/>
+<a href="https://www.geeksforgeeks.org/bohrs-atomic-model/">https://www.geeksforgeeks.org/bohrs-atomic-model/</a><br/><br/>
+
+Thompson\'s atomic model. (n.d.). Chemistry Learner. Retrieved from<br/>
+<a href="https://www.chemistrylearner.com/thompson-atomic-model.html">https://www.chemistrylearner.com/thompson-atomic-model.html</a><br/><br/>
+
+University of Wisconsin-La Crosse. (n.d.). Why study chemistry? Retrieved from<br/>
+<a href="https://www.uwlax.edu/academics/department/chemistry-and-biochemistry/student-resources/why-study-chemistry/">https://www.uwlax.edu/academics/department/chemistry-and-biochemistry/student-resources/why-study-chemistry/</a>
+]]></string>
+
+
+
+
+
+</resources>
